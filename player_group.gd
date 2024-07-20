@@ -23,5 +23,5 @@ func _on_enemy_group_next_player_turn():
 func switch_focus(old_index, new_index):
 	if old_index >= 0 and old_index < players.size():
 		players[old_index].unfocus()
-	if new_index >= 0 and new_index < players.size():
+	if new_index >= 0 and old_index < players.size():
 		players[new_index].focus()

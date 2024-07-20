@@ -1,0 +1,153 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7unnbi3tduls"]
+
+[ext_resource type="Script" path="res://card_selection.gd" id="1_3dar5"]
+[ext_resource type="Script" path="res://Deck.gd" id="1_cr16k"]
+[ext_resource type="Texture2D" uid="uid://dnhhwgqlf6tld" path="res://icon.svg" id="3_27xfg"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xvc5q"]
+
+[node name="CardSelection" type="Node2D"]
+script = ExtResource("1_3dar5")
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2(85, 49)
+metadata/_edit_group_ = true
+
+[node name="Deck" type="Node" parent="Player"]
+script = ExtResource("1_cr16k")
+
+[node name="Icon" type="Sprite2D" parent="Player"]
+modulate = Color(0.360784, 1, 0.690196, 1)
+scale = Vector2(0.429688, 0.601563)
+texture = ExtResource("3_27xfg")
+
+[node name="Enemy" type="Node2D" parent="."]
+position = Vector2(239, 49)
+metadata/_edit_group_ = true
+
+[node name="Icon" type="Sprite2D" parent="Enemy"]
+modulate = Color(1, 0.392157, 0.392157, 1)
+scale = Vector2(0.429688, 0.601563)
+texture = ExtResource("3_27xfg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hand" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -34.0
+offset_right = 106.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="CardButton" type="Button" parent="CanvasLayer/Hand"]
+layout_mode = 2
+text = "          "
+
+[node name="SuitLabel" type="Label" parent="CanvasLayer/Hand/CardButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "DEFEND"
+
+[node name="NumLabel" type="Label" parent="CanvasLayer/Hand/CardButton"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 40.0
+grow_vertical = 0
+text = "NUM"
+
+[node name="CardButton2" type="Button" parent="CanvasLayer/Hand"]
+layout_mode = 2
+text = "          "
+
+[node name="SuitLabel" type="Label" parent="CanvasLayer/Hand/CardButton2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "DEFEND"
+
+[node name="NumLabel" type="Label" parent="CanvasLayer/Hand/CardButton2"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 40.0
+grow_vertical = 0
+text = "NUM"
+
+[node name="CardButton3" type="Button" parent="CanvasLayer/Hand"]
+layout_mode = 2
+text = "          "
+
+[node name="SuitLabel" type="Label" parent="CanvasLayer/Hand/CardButton3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "DEFEND"
+
+[node name="NumLabel" type="Label" parent="CanvasLayer/Hand/CardButton3"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 40.0
+grow_vertical = 0
+text = "NUM"
+
+[node name="CardButton4" type="Button" parent="CanvasLayer/Hand"]
+layout_mode = 2
+text = "          "
+
+[node name="SuitLabel" type="Label" parent="CanvasLayer/Hand/CardButton4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "DEFEND"
+
+[node name="NumLabel" type="Label" parent="CanvasLayer/Hand/CardButton4"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 40.0
+grow_vertical = 0
+text = "NUM"
+
+[node name="DialogueBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 0.737255, 0.0980392)
+offset_left = 49.0
+offset_top = 98.0
+offset_right = 270.0
+offset_bottom = 139.0
+texture = SubResource("CanvasTexture_xvc5q")
+
+[node name="DisplayText" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 52.0
+offset_top = 99.0
+offset_right = 266.0
+offset_bottom = 136.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "ABHADFKANFEIFAKLDNFLKAsdfsdfsdfsdfsdfsdf"
+autowrap_mode = 1

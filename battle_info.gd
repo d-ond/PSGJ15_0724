@@ -23,47 +23,48 @@ func _clear_action_queue():
 	action_queue.clear()
 
 func execute():
+	print(action_queue.size())
 	for i in action_queue:
 		enemy_group.enemies[i].take_damage(1)
+		print("damage taken")
 		await get_tree().create_timer(1).timeout
 		if enemy_group.enemies[i]._is_defeated():
-			_clear_action_queue()
-			enemy_group_defeated.emit()
-			break
+			# Remove defeated enemy's action
+			if enemy_group._is_defeated():
+				_clear_action_queue()
+				enemy_group_defeated.emit()
+				break
 	action_queue.clear()
 	execution_phase_finished.emit()
-	
+
 func make_selection():
 	is_selection_phase = true
+	show_choice()
 
 func _process(_delta):
 	if is_selection_phase:
-		if not choice.visible:
-			if Input.is_action_just_pressed("ui_up"):
-				if index > 0:
-					switch_focus(index, index - 1)
-					index -= 1
-					print(index)
+		handle_selection_phase_input()
 
-			if Input.is_action_just_pressed("ui_down"):
-				if index < enemy_group.enemies.size() - 1:
-					switch_focus(index, index + 1)
-					index += 1
-					print(index)
+func handle_selection_phase_input():
+	if not choice.visible:
+		if Input.is_action_just_pressed("ui_up"):
+			if index > 0:
+				switch_focus(index, index - 1)
+				index -= 1
 
-			if Input.is_action_just_pressed("ui_accept"):
-				if action_queue.size() != 2:
+		if Input.is_action_just_pressed("ui_down"):
+			if index < enemy_group.enemies.size() - 1:
+				switch_focus(index, index + 1)
+				index += 1
+
+		if Input.is_action_just_pressed("ui_accept"):
+			if action_queue.size() <= 1:
+				if is_selection_phase:
 					_add_to_queue(index)
-				if action_queue.size() == 2:
-					player_turn_ended.emit()
+					print("added to action_queue")
+				if is_selection_phase and action_queue.size() == 2:
 					is_selection_phase = false
-					print("player turn ended")
-
-		if action_queue.size() == 2 and not is_battling:
-			player_turn_ended.emit()
-			is_selection_phase = false
-			is_battling = true
-			_reset_focus()
+					end_selection_phase()
 
 func switch_focus(old_index, new_index):
 	if old_index >= 0 and old_index < enemy_group.enemies.size():
@@ -87,5 +88,9 @@ func _start_choosing():
 func _on_attack_pressed():
 	choice.hide()
 	_start_choosing()
-	
 
+func end_selection_phase():
+	player_turn_ended.emit()
+	print("selection phase done")
+	is_selection_phase = false
+	_reset_focus()
