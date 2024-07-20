@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://byukvhw7cervq"]
+
+[ext_resource type="PackedScene" uid="uid://bt3karu2vw6ff" path="res://enemy_group.tscn" id="1_ufw1b"]
+[ext_resource type="Script" path="res://battle_scene.gd" id="1_v8dp1"]
+[ext_resource type="PackedScene" uid="uid://dmnhptkq6qw2n" path="res://player_group.tscn" id="2_hkwgv"]
+[ext_resource type="Script" path="res://battle_info.gd" id="4_t73vo"]
+
+[node name="BattleScene" type="Node2D"]
+script = ExtResource("1_v8dp1")
+
+[node name="EnemyGroup" parent="." instance=ExtResource("1_ufw1b")]
+position = Vector2(32, 20)
+
+[node name="PlayerGroup" parent="." instance=ExtResource("2_hkwgv")]
+position = Vector2(268, 22)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="choice" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -56.0
+offset_top = -51.0
+offset_right = 56.0
+offset_bottom = 50.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+
+[node name="Attack" type="Button" parent="CanvasLayer/choice"]
+layout_mode = 2
+text = "Attack"
+
+[node name="Defend" type="Button" parent="CanvasLayer/choice"]
+layout_mode = 2
+disabled = true
+text = "Defend"
+
+[node name="Run" type="Button" parent="CanvasLayer/choice"]
+layout_mode = 2
+disabled = true
+text = "Run"
+
+[node name="BattleInfo" type="Node2D" parent="."]
+script = ExtResource("4_t73vo")
+
+[connection signal="pressed" from="CanvasLayer/choice/Attack" to="BattleInfo" method="_on_attack_pressed"]
