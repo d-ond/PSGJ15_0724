@@ -1,8 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7unnbi3tduls"]
+[gd_scene load_steps=10 format=3 uid="uid://b7unnbi3tduls"]
 
 [ext_resource type="Script" path="res://card_selection.gd" id="1_3dar5"]
 [ext_resource type="Script" path="res://Deck.gd" id="1_cr16k"]
+[ext_resource type="Script" path="res://Player.gd" id="2_wlttv"]
 [ext_resource type="Texture2D" uid="uid://dnhhwgqlf6tld" path="res://icon.svg" id="3_27xfg"]
+[ext_resource type="Script" path="res://Enemy.gd" id="4_fto1c"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_syiqh"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_agjuc"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wrgvi"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_xvc5q"]
 
@@ -10,8 +18,9 @@
 script = ExtResource("1_3dar5")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2(85, 49)
-metadata/_edit_group_ = true
+position = Vector2(85, 68)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("2_wlttv")
 
 [node name="Deck" type="Node" parent="Player"]
 script = ExtResource("1_cr16k")
@@ -21,14 +30,45 @@ modulate = Color(0.360784, 1, 0.690196, 1)
 scale = Vector2(0.429688, 0.601563)
 texture = ExtResource("3_27xfg")
 
-[node name="Enemy" type="Node2D" parent="."]
-position = Vector2(239, 49)
-metadata/_edit_group_ = true
+[node name="HealthBar" type="ProgressBar" parent="Player"]
+self_modulate = Color(0, 1, 0, 1)
+offset_left = -33.3333
+offset_top = -60.0
+offset_right = 34.6667
+offset_bottom = -55.0
+value = 100.0
+show_percentage = false
 
-[node name="Icon" type="Sprite2D" parent="Enemy"]
-modulate = Color(1, 0.392157, 0.392157, 1)
-scale = Vector2(0.429688, 0.601563)
-texture = ExtResource("3_27xfg")
+[node name="ShieldBar" type="ProgressBar" parent="Player"]
+self_modulate = Color(0, 1, 1, 1)
+offset_left = -33.0
+offset_top = -60.0
+offset_right = 35.0
+offset_bottom = -55.0
+value = 100.0
+show_percentage = false
+
+[node name="HealthBarLabel" type="Label" parent="Player"]
+offset_left = -33.3333
+offset_top = -74.6667
+offset_right = 34.6667
+offset_bottom = -60.6667
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShieldBarLabel" type="Label" parent="Player"]
+offset_left = -32.0
+offset_top = -54.6667
+offset_right = 34.0
+offset_bottom = -40.6667
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 10
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -39,10 +79,12 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -106.0
-offset_top = -34.0
+offset_top = -40.0
 offset_right = 106.0
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_group_ = true
 
 [node name="CardButton" type="Button" parent="CanvasLayer/Hand"]
 layout_mode = 2
@@ -128,12 +170,90 @@ offset_right = 40.0
 grow_vertical = 0
 text = "NUM"
 
+[node name="WinScreen" type="TextureRect" parent="CanvasLayer"]
+visible = false
+modulate = Color(0.25098, 0.25098, 0.258824, 1)
+offset_right = 320.0
+offset_bottom = 179.0
+texture = SubResource("CanvasTexture_syiqh")
+
+[node name="Label" type="Label" parent="CanvasLayer/WinScreen"]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "YOU WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoseScreen" type="TextureRect" parent="CanvasLayer"]
+visible = false
+modulate = Color(0.25098, 0.25098, 0.258824, 1)
+offset_right = 320.0
+offset_bottom = 179.0
+texture = SubResource("CanvasTexture_syiqh")
+
+[node name="Label" type="Label" parent="CanvasLayer/LoseScreen"]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "YOU LOSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DiscardPile" type="TextureRect" parent="CanvasLayer"]
+self_modulate = Color(0, 0, 0, 1)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -55.0
+offset_right = -7.0
+offset_bottom = -7.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = SubResource("CanvasTexture_agjuc")
+
+[node name="DiscardPileLabel" type="Label" parent="CanvasLayer/DiscardPile"]
+offset_right = 31.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DrawPile" type="TextureRect" parent="CanvasLayer"]
+self_modulate = Color(0, 0, 0, 1)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -55.0
+offset_right = 41.0
+offset_bottom = -7.0
+grow_vertical = 0
+texture = SubResource("CanvasTexture_wrgvi")
+
+[node name="DrawPileLabel" type="Label" parent="CanvasLayer/DrawPile"]
+offset_right = 32.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="DialogueBox" type="TextureRect" parent="."]
 modulate = Color(1, 1, 0.737255, 0.0980392)
 offset_left = 49.0
-offset_top = 98.0
+offset_top = 113.0
 offset_right = 270.0
-offset_bottom = 139.0
+offset_bottom = 135.0
 texture = SubResource("CanvasTexture_xvc5q")
 
 [node name="DisplayText" type="Label" parent="."]
@@ -143,11 +263,69 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 52.0
-offset_top = 99.0
+offset_top = 115.0
 offset_right = 266.0
-offset_bottom = 136.0
+offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 12
-text = "ABHADFKANFEIFAKLDNFLKAsdfsdfsdfsdfsdfsdf"
+text = "ABHADFKANFEIFAKLDNFLKAsdfsdfs"
 autowrap_mode = 1
+
+[node name="Enemy" type="Node2D" parent="."]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("4_fto1c")
+
+[node name="HealthBar" type="ProgressBar" parent="Enemy"]
+self_modulate = Color(0, 1, 0, 1)
+offset_left = 888.0
+offset_top = 192.0
+offset_right = 1065.0
+offset_bottom = 207.0
+value = 100.0
+show_percentage = false
+
+[node name="ShieldBar" type="ProgressBar" parent="Enemy"]
+self_modulate = Color(0, 1, 1, 1)
+offset_left = 888.0
+offset_top = 192.0
+offset_right = 1064.0
+offset_bottom = 208.0
+value = 100.0
+show_percentage = false
+
+[node name="IntentLabel" type="Label" parent="Enemy"]
+offset_left = 892.0
+offset_top = 108.0
+offset_right = 1064.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 24
+text = "Attack for 5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthBarLabel" type="Label" parent="Enemy"]
+offset_left = 888.0
+offset_top = 168.0
+offset_right = 1064.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShieldBarLabel" type="Label" parent="Enemy"]
+offset_left = 888.0
+offset_top = 208.0
+offset_right = 1064.0
+offset_bottom = 231.0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Icon" type="Sprite2D" parent="Enemy"]
+position = Vector2(976, 296)
+texture = ExtResource("3_27xfg")
