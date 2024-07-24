@@ -1,89 +1,112 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7unnbi3tduls"]
+[gd_scene load_steps=9 format=3 uid="uid://b7unnbi3tduls"]
 
 [ext_resource type="Script" path="res://card_selection.gd" id="1_3dar5"]
 [ext_resource type="Script" path="res://Deck.gd" id="1_cr16k"]
 [ext_resource type="Script" path="res://Player.gd" id="2_wlttv"]
 [ext_resource type="Texture2D" uid="uid://dnhhwgqlf6tld" path="res://icon.svg" id="3_27xfg"]
 [ext_resource type="Script" path="res://Enemy.gd" id="4_fto1c"]
+[ext_resource type="Texture2D" uid="uid://btvf6kc883qaj" path="res://Retro Inventory/Original/Inventory_Slot_2.png" id="6_kdmm2"]
+[ext_resource type="Texture2D" uid="uid://c7qqqbypb810u" path="res://Retro Inventory/Original/Inventory_Slot_3.png" id="7_wofu6"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_syiqh"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_agjuc"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_wrgvi"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_xvc5q"]
 
 [node name="CardSelection" type="Node2D"]
 script = ExtResource("1_3dar5")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2(85, 68)
+position = Vector2(67, 52)
 scale = Vector2(0.75, 0.75)
 script = ExtResource("2_wlttv")
+
+[node name="Intent" type="Node" parent="Player"]
+
+[node name="AttackIntent" type="Sprite2D" parent="Player/Intent"]
+texture_filter = 1
+position = Vector2(59, 16)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("6_kdmm2")
+
+[node name="DefendIntent" type="Sprite2D" parent="Player/Intent"]
+texture_filter = 1
+position = Vector2(59, 16)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_wofu6")
+
+[node name="NumberIntent" type="Label" parent="Player/Intent"]
+offset_left = 69.0
+offset_top = 9.0
+offset_right = 89.0
+offset_bottom = 35.0
+scale = Vector2(0.6, 0.6)
+text = "10"
 
 [node name="Deck" type="Node" parent="Player"]
 script = ExtResource("1_cr16k")
 
 [node name="Icon" type="Sprite2D" parent="Player"]
-modulate = Color(0.360784, 1, 0.690196, 1)
-scale = Vector2(0.429688, 0.601563)
+modulate = Color(0, 1, 0, 1)
+scale = Vector2(0.357, 0.5)
 texture = ExtResource("3_27xfg")
 
 [node name="HealthBar" type="ProgressBar" parent="Player"]
 self_modulate = Color(0, 1, 0, 1)
 offset_left = -33.3333
-offset_top = -60.0
+offset_top = 56.0
 offset_right = 34.6667
-offset_bottom = -55.0
+offset_bottom = 61.0
 value = 100.0
 show_percentage = false
+metadata/_edit_use_anchors_ = true
 
 [node name="ShieldBar" type="ProgressBar" parent="Player"]
 self_modulate = Color(0, 1, 1, 1)
 offset_left = -33.0
-offset_top = -60.0
+offset_top = 56.0
 offset_right = 35.0
-offset_bottom = -55.0
+offset_bottom = 61.0
 value = 100.0
 show_percentage = false
+metadata/_edit_use_anchors_ = true
 
 [node name="HealthBarLabel" type="Label" parent="Player"]
 offset_left = -33.3333
-offset_top = -74.6667
+offset_top = 41.3333
 offset_right = 34.6667
-offset_bottom = -60.6667
+offset_bottom = 55.3333
 theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_font_sizes/font_size = 10
 text = "0/0"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="ShieldBarLabel" type="Label" parent="Player"]
 offset_left = -32.0
-offset_top = -54.6667
+offset_top = 61.3333
 offset_right = 34.0
-offset_bottom = -40.6667
+offset_bottom = 75.3333
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_font_sizes/font_size = 10
 text = "0/0"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Hand" type="HBoxContainer" parent="CanvasLayer"]
+[node name="Hand" type="GridContainer" parent="CanvasLayer"]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -106.0
-offset_top = -40.0
-offset_right = 106.0
+offset_left = -140.0
+offset_top = -72.0
+offset_right = -36.0
 offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 0
+columns = 2
 metadata/_edit_group_ = true
 
 [node name="CardButton" type="Button" parent="CanvasLayer/Hand"]
@@ -204,73 +227,24 @@ text = "YOU LOSE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DiscardPile" type="TextureRect" parent="CanvasLayer"]
-self_modulate = Color(0, 0, 0, 1)
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -55.0
-offset_right = -7.0
-offset_bottom = -7.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = SubResource("CanvasTexture_agjuc")
+[node name="DrawPileLabel" type="Label" parent="CanvasLayer"]
+offset_top = 111.0
+offset_right = 19.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="DiscardPileLabel" type="Label" parent="CanvasLayer/DiscardPile"]
-offset_right = 31.0
-offset_bottom = 23.0
+[node name="DiscardPileLabel" type="Label" parent="CanvasLayer"]
+offset_top = 149.0
+offset_right = 19.0
+offset_bottom = 172.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 12
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="DrawPile" type="TextureRect" parent="CanvasLayer"]
-self_modulate = Color(0, 0, 0, 1)
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 8.0
-offset_top = -55.0
-offset_right = 41.0
-offset_bottom = -7.0
-grow_vertical = 0
-texture = SubResource("CanvasTexture_wrgvi")
-
-[node name="DrawPileLabel" type="Label" parent="CanvasLayer/DrawPile"]
-offset_right = 32.0
-offset_bottom = 23.0
-theme_override_font_sizes/font_size = 12
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="DialogueBox" type="TextureRect" parent="."]
-modulate = Color(1, 1, 0.737255, 0.0980392)
-offset_left = 49.0
-offset_top = 113.0
-offset_right = 270.0
-offset_bottom = 135.0
-texture = SubResource("CanvasTexture_xvc5q")
-
-[node name="DisplayText" type="Label" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 52.0
-offset_top = 115.0
-offset_right = 266.0
-offset_bottom = 132.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 12
-text = "ABHADFKANFEIFAKLDNFLKAsdfsdfs"
-autowrap_mode = 1
 
 [node name="Enemy" type="Node2D" parent="."]
 scale = Vector2(0.25, 0.25)

@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbr73wk5a1ouv"]
+
+[ext_resource type="Texture2D" uid="uid://dnhhwgqlf6tld" path="res://icon.svg" id="1_wpsva"]
+
+[node name="BattleSceneTest" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(65, 46)
+scale = Vector2(0.367188, 0.5625)
+texture = ExtResource("1_wpsva")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Grid" type="GridContainer" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -93.0
+offset_right = 100.0
+offset_bottom = -9.0
+grow_vertical = 0
+size_flags_horizontal = 3
+columns = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button2" type="Button" parent="CanvasLayer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button3" type="Button" parent="CanvasLayer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button4" type="Button" parent="CanvasLayer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

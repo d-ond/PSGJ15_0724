@@ -1,2 +1,495 @@
 # Godot 4+ specific ignores
 .godot/
+Retro Inventory/Read Me.txt
+Retro Inventory/Original/Health_01_Bar01.png
+Retro Inventory/Original/Health_01_Bar01.png.import
+Retro Inventory/Original/Health_01_Bar02.png
+Retro Inventory/Original/Health_01_Bar02.png.import
+Retro Inventory/Original/Health_01_Bar03.png
+Retro Inventory/Original/Health_01_Bar03.png.import
+Retro Inventory/Original/Health_01.png
+Retro Inventory/Original/Health_01.png.import
+Retro Inventory/Original/Health_02_Bar01.png
+Retro Inventory/Original/Health_02_Bar01.png.import
+Retro Inventory/Original/Health_02_Bar02.png
+Retro Inventory/Original/Health_02_Bar02.png.import
+Retro Inventory/Original/Health_02_Bar03.png
+Retro Inventory/Original/Health_02_Bar03.png.import
+Retro Inventory/Original/Health_02.png
+Retro Inventory/Original/Health_02.png.import
+Retro Inventory/Original/Health_03_Bar01.png
+Retro Inventory/Original/Health_03_Bar01.png.import
+Retro Inventory/Original/Health_03_Bar02.png
+Retro Inventory/Original/Health_03_Bar02.png.import
+Retro Inventory/Original/Health_03_Bar03.png
+Retro Inventory/Original/Health_03_Bar03.png.import
+Retro Inventory/Original/Health_03.png
+Retro Inventory/Original/Health_03.png.import
+Retro Inventory/Original/Health_04_Bar01.png
+Retro Inventory/Original/Health_04_Bar01.png.import
+Retro Inventory/Original/Health_04_Bar02.png
+Retro Inventory/Original/Health_04_Bar02.png.import
+Retro Inventory/Original/Health_04_Bar03.png
+Retro Inventory/Original/Health_04_Bar03.png.import
+Retro Inventory/Original/Health_04_Bar04.png
+Retro Inventory/Original/Health_04_Bar04.png.import
+Retro Inventory/Original/Health_04_Bar05.png
+Retro Inventory/Original/Health_04_Bar05.png.import
+Retro Inventory/Original/Health_04_Bar06.png
+Retro Inventory/Original/Health_04_Bar06.png.import
+Retro Inventory/Original/Health_04_Heart_Blue_Clear.png
+Retro Inventory/Original/Health_04_Heart_Blue_Clear.png.import
+Retro Inventory/Original/Health_04_Heart_Blue.png
+Retro Inventory/Original/Health_04_Heart_Blue.png.import
+Retro Inventory/Original/Health_04_Heart_Red_Clear.png
+Retro Inventory/Original/Health_04_Heart_Red_Clear.png.import
+Retro Inventory/Original/Health_04_Heart_Red.png
+Retro Inventory/Original/Health_04_Heart_Red.png.import
+Retro Inventory/Original/Health_04_Heart_Yellow_Clear.png
+Retro Inventory/Original/Health_04_Heart_Yellow_Clear.png.import
+Retro Inventory/Original/Health_04_Heart_Yellow.png
+Retro Inventory/Original/Health_04_Heart_Yellow.png.import
+Retro Inventory/Original/Health_04.png
+Retro Inventory/Original/Health_04.png.import
+Retro Inventory/Original/Health_05_01.png
+Retro Inventory/Original/Health_05_01.png.import
+Retro Inventory/Original/Health_05_02.png
+Retro Inventory/Original/Health_05_02.png.import
+Retro Inventory/Original/Health_05_03.png
+Retro Inventory/Original/Health_05_03.png.import
+Retro Inventory/Original/Heart_Blue_1.png
+Retro Inventory/Original/Heart_Blue_1.png.import
+Retro Inventory/Original/Heart_Blue_2.png
+Retro Inventory/Original/Heart_Blue_2.png.import
+Retro Inventory/Original/Heart_Blue_3.png
+Retro Inventory/Original/Heart_Blue_3.png.import
+Retro Inventory/Original/Heart_Blue_4.png
+Retro Inventory/Original/Heart_Blue_4.png.import
+Retro Inventory/Original/Heart_Blue.png
+Retro Inventory/Original/Heart_Blue.png.import
+Retro Inventory/Original/Heart_Orange_1.png
+Retro Inventory/Original/Heart_Orange_1.png.import
+Retro Inventory/Original/Heart_Orange_2.png
+Retro Inventory/Original/Heart_Orange_2.png.import
+Retro Inventory/Original/Heart_Orange_3.png
+Retro Inventory/Original/Heart_Orange_3.png.import
+Retro Inventory/Original/Heart_Orange_4.png
+Retro Inventory/Original/Heart_Orange_4.png.import
+Retro Inventory/Original/Heart_Orange.png
+Retro Inventory/Original/Heart_Orange.png.import
+Retro Inventory/Original/Heart_Red_1.png
+Retro Inventory/Original/Heart_Red_1.png.import
+Retro Inventory/Original/Heart_Red_2.png
+Retro Inventory/Original/Heart_Red_2.png.import
+Retro Inventory/Original/Heart_Red_3.png
+Retro Inventory/Original/Heart_Red_3.png.import
+Retro Inventory/Original/Heart_Red_4.png
+Retro Inventory/Original/Heart_Red_4.png.import
+Retro Inventory/Original/Heart_Red.png
+Retro Inventory/Original/Heart_Red.png.import
+Retro Inventory/Original/Hearts_Blue_1.png
+Retro Inventory/Original/Hearts_Blue_1.png.import
+Retro Inventory/Original/Hearts_Blue_2.png
+Retro Inventory/Original/Hearts_Blue_2.png.import
+Retro Inventory/Original/Hearts_Blue_3.png
+Retro Inventory/Original/Hearts_Blue_3.png.import
+Retro Inventory/Original/Hearts_Blue_4.png
+Retro Inventory/Original/Hearts_Blue_4.png.import
+Retro Inventory/Original/Hearts_Blue_5.png
+Retro Inventory/Original/Hearts_Blue_5.png.import
+Retro Inventory/Original/Hearts_Red_1.png
+Retro Inventory/Original/Hearts_Red_1.png.import
+Retro Inventory/Original/Hearts_Red_2.png
+Retro Inventory/Original/Hearts_Red_2.png.import
+Retro Inventory/Original/Hearts_Red_3.png
+Retro Inventory/Original/Hearts_Red_3.png.import
+Retro Inventory/Original/Hearts_Red_4.png
+Retro Inventory/Original/Hearts_Red_4.png.import
+Retro Inventory/Original/Hearts_Red_5.png
+Retro Inventory/Original/Hearts_Red_5.png.import
+Retro Inventory/Original/Hearts_Yellow_1.png
+Retro Inventory/Original/Hearts_Yellow_1.png.import
+Retro Inventory/Original/Hearts_Yellow_2.png
+Retro Inventory/Original/Hearts_Yellow_2.png.import
+Retro Inventory/Original/Hearts_Yellow_3.png
+Retro Inventory/Original/Hearts_Yellow_3.png.import
+Retro Inventory/Original/Hearts_Yellow_4.png
+Retro Inventory/Original/Hearts_Yellow_4.png.import
+Retro Inventory/Original/Hearts_Yellow_5.png
+Retro Inventory/Original/Hearts_Yellow_5.png.import
+Retro Inventory/Original/Hearts.png
+Retro Inventory/Original/Hearts.png.import
+Retro Inventory/Original/Inventory_9Slices.png
+Retro Inventory/Original/Inventory_9Slices.png.import
+Retro Inventory/Original/Inventory_Example_01.png
+Retro Inventory/Original/Inventory_Example_01.png.import
+Retro Inventory/Original/Inventory_Example_02.png
+Retro Inventory/Original/Inventory_Example_02.png.import
+Retro Inventory/Original/Inventory_Example_03.png
+Retro Inventory/Original/Inventory_Example_03.png.import
+Retro Inventory/Original/Inventory_Example_04.png
+Retro Inventory/Original/Inventory_Example_04.png.import
+Retro Inventory/Original/Inventory_Slot_1.png
+Retro Inventory/Original/Inventory_Slot_1.png.import
+Retro Inventory/Original/Inventory_Slot_2.png
+Retro Inventory/Original/Inventory_Slot_2.png.import
+Retro Inventory/Original/Inventory_Slot_3.png
+Retro Inventory/Original/Inventory_Slot_3.png.import
+Retro Inventory/Original/Inventory_Slot_4.png
+Retro Inventory/Original/Inventory_Slot_4.png.import
+Retro Inventory/Original/Inventory_Slot_5.png
+Retro Inventory/Original/Inventory_Slot_5.png.import
+Retro Inventory/Original/Inventory_Slot_6.png
+Retro Inventory/Original/Inventory_Slot_6.png.import
+Retro Inventory/Original/Inventory_Slot_7.png
+Retro Inventory/Original/Inventory_Slot_7.png.import
+Retro Inventory/Original/Inventory_Slot_8.png
+Retro Inventory/Original/Inventory_Slot_8.png.import
+Retro Inventory/Original/Inventory_Slot_9.png
+Retro Inventory/Original/Inventory_Slot_9.png.import
+Retro Inventory/Original/Inventory_Slot_10.png
+Retro Inventory/Original/Inventory_Slot_10.png.import
+Retro Inventory/Original/Inventory.png
+Retro Inventory/Original/Inventory.png.import
+Retro Inventory/Original/Settings_Bar01.png
+Retro Inventory/Original/Settings_Bar01.png.import
+Retro Inventory/Original/Settings_Bar02.png
+Retro Inventory/Original/Settings_Bar02.png.import
+Retro Inventory/Original/Settings_Bar03.png
+Retro Inventory/Original/Settings_Bar03.png.import
+Retro Inventory/Original/Settings_Cross01.png
+Retro Inventory/Original/Settings_Cross01.png.import
+Retro Inventory/Original/Settings_Cross02.png
+Retro Inventory/Original/Settings_Cross02.png.import
+Retro Inventory/Original/Settings_Cross03.png
+Retro Inventory/Original/Settings_Cross03.png.import
+Retro Inventory/Original/Settings.png
+Retro Inventory/Original/Settings.png.import
+Retro Inventory/Scaled 2x/Health_01_Bar01.png
+Retro Inventory/Scaled 2x/Health_01_Bar01.png.import
+Retro Inventory/Scaled 2x/Health_01_Bar02.png
+Retro Inventory/Scaled 2x/Health_01_Bar02.png.import
+Retro Inventory/Scaled 2x/Health_01_Bar03.png
+Retro Inventory/Scaled 2x/Health_01_Bar03.png.import
+Retro Inventory/Scaled 2x/Health_01.png
+Retro Inventory/Scaled 2x/Health_01.png.import
+Retro Inventory/Scaled 2x/Health_02_Bar01.png
+Retro Inventory/Scaled 2x/Health_02_Bar01.png.import
+Retro Inventory/Scaled 2x/Health_02_Bar02.png
+Retro Inventory/Scaled 2x/Health_02_Bar02.png.import
+Retro Inventory/Scaled 2x/Health_02_Bar03.png
+Retro Inventory/Scaled 2x/Health_02_Bar03.png.import
+Retro Inventory/Scaled 2x/Health_02.png
+Retro Inventory/Scaled 2x/Health_02.png.import
+Retro Inventory/Scaled 2x/Health_03_Bar01.png
+Retro Inventory/Scaled 2x/Health_03_Bar01.png.import
+Retro Inventory/Scaled 2x/Health_03_Bar02.png
+Retro Inventory/Scaled 2x/Health_03_Bar02.png.import
+Retro Inventory/Scaled 2x/Health_03_Bar03.png
+Retro Inventory/Scaled 2x/Health_03_Bar03.png.import
+Retro Inventory/Scaled 2x/Health_03.png
+Retro Inventory/Scaled 2x/Health_03.png.import
+Retro Inventory/Scaled 2x/Health_04_Bar01.png
+Retro Inventory/Scaled 2x/Health_04_Bar01.png.import
+Retro Inventory/Scaled 2x/Health_04_Bar02.png
+Retro Inventory/Scaled 2x/Health_04_Bar02.png.import
+Retro Inventory/Scaled 2x/Health_04_Bar03.png
+Retro Inventory/Scaled 2x/Health_04_Bar03.png.import
+Retro Inventory/Scaled 2x/Health_04_Bar04.png
+Retro Inventory/Scaled 2x/Health_04_Bar04.png.import
+Retro Inventory/Scaled 2x/Health_04_Bar05.png
+Retro Inventory/Scaled 2x/Health_04_Bar05.png.import
+Retro Inventory/Scaled 2x/Health_04_Bar06.png
+Retro Inventory/Scaled 2x/Health_04_Bar06.png.import
+Retro Inventory/Scaled 2x/Health_04_Heart_Blue_Clear.png
+Retro Inventory/Scaled 2x/Health_04_Heart_Blue_Clear.png.import
+Retro Inventory/Scaled 2x/Health_04_Heart_Blue.png
+Retro Inventory/Scaled 2x/Health_04_Heart_Blue.png.import
+Retro Inventory/Scaled 2x/Health_04_Heart_Red_Clear.png
+Retro Inventory/Scaled 2x/Health_04_Heart_Red_Clear.png.import
+Retro Inventory/Scaled 2x/Health_04_Heart_Red.png
+Retro Inventory/Scaled 2x/Health_04_Heart_Red.png.import
+Retro Inventory/Scaled 2x/Health_04_Heart_Yellow_Clear.png
+Retro Inventory/Scaled 2x/Health_04_Heart_Yellow_Clear.png.import
+Retro Inventory/Scaled 2x/Health_04_Heart_Yellow.png
+Retro Inventory/Scaled 2x/Health_04_Heart_Yellow.png.import
+Retro Inventory/Scaled 2x/Health_04.png
+Retro Inventory/Scaled 2x/Health_04.png.import
+Retro Inventory/Scaled 2x/Health_05_01.png
+Retro Inventory/Scaled 2x/Health_05_01.png.import
+Retro Inventory/Scaled 2x/Health_05_02.png
+Retro Inventory/Scaled 2x/Health_05_02.png.import
+Retro Inventory/Scaled 2x/Health_05_03.png
+Retro Inventory/Scaled 2x/Health_05_03.png.import
+Retro Inventory/Scaled 2x/Heart_Blue_1.png
+Retro Inventory/Scaled 2x/Heart_Blue_1.png.import
+Retro Inventory/Scaled 2x/Heart_Blue_2.png
+Retro Inventory/Scaled 2x/Heart_Blue_2.png.import
+Retro Inventory/Scaled 2x/Heart_Blue_3.png
+Retro Inventory/Scaled 2x/Heart_Blue_3.png.import
+Retro Inventory/Scaled 2x/Heart_Blue_4.png
+Retro Inventory/Scaled 2x/Heart_Blue_4.png.import
+Retro Inventory/Scaled 2x/Heart_Blue.png
+Retro Inventory/Scaled 2x/Heart_Blue.png.import
+Retro Inventory/Scaled 2x/Heart_Orange_1.png
+Retro Inventory/Scaled 2x/Heart_Orange_1.png.import
+Retro Inventory/Scaled 2x/Heart_Orange_2.png
+Retro Inventory/Scaled 2x/Heart_Orange_2.png.import
+Retro Inventory/Scaled 2x/Heart_Orange_3.png
+Retro Inventory/Scaled 2x/Heart_Orange_3.png.import
+Retro Inventory/Scaled 2x/Heart_Orange_4.png
+Retro Inventory/Scaled 2x/Heart_Orange_4.png.import
+Retro Inventory/Scaled 2x/Heart_Orange.png
+Retro Inventory/Scaled 2x/Heart_Orange.png.import
+Retro Inventory/Scaled 2x/Heart_Red_1.png
+Retro Inventory/Scaled 2x/Heart_Red_1.png.import
+Retro Inventory/Scaled 2x/Heart_Red_2.png
+Retro Inventory/Scaled 2x/Heart_Red_2.png.import
+Retro Inventory/Scaled 2x/Heart_Red_3.png
+Retro Inventory/Scaled 2x/Heart_Red_3.png.import
+Retro Inventory/Scaled 2x/Heart_Red_4.png
+Retro Inventory/Scaled 2x/Heart_Red_4.png.import
+Retro Inventory/Scaled 2x/Heart_Red.png
+Retro Inventory/Scaled 2x/Heart_Red.png.import
+Retro Inventory/Scaled 2x/Hearts_Blue_1.png
+Retro Inventory/Scaled 2x/Hearts_Blue_1.png.import
+Retro Inventory/Scaled 2x/Hearts_Blue_2.png
+Retro Inventory/Scaled 2x/Hearts_Blue_2.png.import
+Retro Inventory/Scaled 2x/Hearts_Blue_3.png
+Retro Inventory/Scaled 2x/Hearts_Blue_3.png.import
+Retro Inventory/Scaled 2x/Hearts_Blue_4.png
+Retro Inventory/Scaled 2x/Hearts_Blue_4.png.import
+Retro Inventory/Scaled 2x/Hearts_Blue_5.png
+Retro Inventory/Scaled 2x/Hearts_Blue_5.png.import
+Retro Inventory/Scaled 2x/Hearts_Red_1.png
+Retro Inventory/Scaled 2x/Hearts_Red_1.png.import
+Retro Inventory/Scaled 2x/Hearts_Red_2.png
+Retro Inventory/Scaled 2x/Hearts_Red_2.png.import
+Retro Inventory/Scaled 2x/Hearts_Red_3.png
+Retro Inventory/Scaled 2x/Hearts_Red_3.png.import
+Retro Inventory/Scaled 2x/Hearts_Red_4.png
+Retro Inventory/Scaled 2x/Hearts_Red_4.png.import
+Retro Inventory/Scaled 2x/Hearts_Red_5.png
+Retro Inventory/Scaled 2x/Hearts_Red_5.png.import
+Retro Inventory/Scaled 2x/Hearts_Yellow_1.png
+Retro Inventory/Scaled 2x/Hearts_Yellow_1.png.import
+Retro Inventory/Scaled 2x/Hearts_Yellow_2.png
+Retro Inventory/Scaled 2x/Hearts_Yellow_2.png.import
+Retro Inventory/Scaled 2x/Hearts_Yellow_3.png
+Retro Inventory/Scaled 2x/Hearts_Yellow_3.png.import
+Retro Inventory/Scaled 2x/Hearts_Yellow_4.png
+Retro Inventory/Scaled 2x/Hearts_Yellow_4.png.import
+Retro Inventory/Scaled 2x/Hearts_Yellow_5.png
+Retro Inventory/Scaled 2x/Hearts_Yellow_5.png.import
+Retro Inventory/Scaled 2x/Hearts.png
+Retro Inventory/Scaled 2x/Hearts.png.import
+Retro Inventory/Scaled 2x/Inventory_9Slices.png
+Retro Inventory/Scaled 2x/Inventory_9Slices.png.import
+Retro Inventory/Scaled 2x/Inventory_Example_01.png
+Retro Inventory/Scaled 2x/Inventory_Example_01.png.import
+Retro Inventory/Scaled 2x/Inventory_Example_02.png
+Retro Inventory/Scaled 2x/Inventory_Example_02.png.import
+Retro Inventory/Scaled 2x/Inventory_Example_03.png
+Retro Inventory/Scaled 2x/Inventory_Example_03.png.import
+Retro Inventory/Scaled 2x/Inventory_Example_04.png
+Retro Inventory/Scaled 2x/Inventory_Example_04.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_1.png
+Retro Inventory/Scaled 2x/Inventory_Slot_1.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_2.png
+Retro Inventory/Scaled 2x/Inventory_Slot_2.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_3.png
+Retro Inventory/Scaled 2x/Inventory_Slot_3.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_4.png
+Retro Inventory/Scaled 2x/Inventory_Slot_4.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_5.png
+Retro Inventory/Scaled 2x/Inventory_Slot_5.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_6.png
+Retro Inventory/Scaled 2x/Inventory_Slot_6.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_7.png
+Retro Inventory/Scaled 2x/Inventory_Slot_7.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_8.png
+Retro Inventory/Scaled 2x/Inventory_Slot_8.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_9.png
+Retro Inventory/Scaled 2x/Inventory_Slot_9.png.import
+Retro Inventory/Scaled 2x/Inventory_Slot_10.png
+Retro Inventory/Scaled 2x/Inventory_Slot_10.png.import
+Retro Inventory/Scaled 2x/Inventory.png
+Retro Inventory/Scaled 2x/Inventory.png.import
+Retro Inventory/Scaled 2x/Settings_Bar01.png
+Retro Inventory/Scaled 2x/Settings_Bar01.png.import
+Retro Inventory/Scaled 2x/Settings_Bar02.png
+Retro Inventory/Scaled 2x/Settings_Bar02.png.import
+Retro Inventory/Scaled 2x/Settings_Bar03.png
+Retro Inventory/Scaled 2x/Settings_Bar03.png.import
+Retro Inventory/Scaled 2x/Settings_Cross01.png
+Retro Inventory/Scaled 2x/Settings_Cross01.png.import
+Retro Inventory/Scaled 2x/Settings_Cross02.png
+Retro Inventory/Scaled 2x/Settings_Cross02.png.import
+Retro Inventory/Scaled 2x/Settings_Cross03.png
+Retro Inventory/Scaled 2x/Settings_Cross03.png.import
+Retro Inventory/Scaled 2x/Settings.png
+Retro Inventory/Scaled 2x/Settings.png.import
+Retro Inventory/Scaled 3x/Health_01_Bar01.png
+Retro Inventory/Scaled 3x/Health_01_Bar01.png.import
+Retro Inventory/Scaled 3x/Health_01_Bar02.png
+Retro Inventory/Scaled 3x/Health_01_Bar02.png.import
+Retro Inventory/Scaled 3x/Health_01_Bar03.png
+Retro Inventory/Scaled 3x/Health_01_Bar03.png.import
+Retro Inventory/Scaled 3x/Health_01.png
+Retro Inventory/Scaled 3x/Health_01.png.import
+Retro Inventory/Scaled 3x/Health_02_Bar01.png
+Retro Inventory/Scaled 3x/Health_02_Bar01.png.import
+Retro Inventory/Scaled 3x/Health_02_Bar02.png
+Retro Inventory/Scaled 3x/Health_02_Bar02.png.import
+Retro Inventory/Scaled 3x/Health_02_Bar03.png
+Retro Inventory/Scaled 3x/Health_02_Bar03.png.import
+Retro Inventory/Scaled 3x/Health_02.png
+Retro Inventory/Scaled 3x/Health_02.png.import
+Retro Inventory/Scaled 3x/Health_03_Bar01.png
+Retro Inventory/Scaled 3x/Health_03_Bar01.png.import
+Retro Inventory/Scaled 3x/Health_03_Bar02.png
+Retro Inventory/Scaled 3x/Health_03_Bar02.png.import
+Retro Inventory/Scaled 3x/Health_03_Bar03.png
+Retro Inventory/Scaled 3x/Health_03_Bar03.png.import
+Retro Inventory/Scaled 3x/Health_03.png
+Retro Inventory/Scaled 3x/Health_03.png.import
+Retro Inventory/Scaled 3x/Health_04_Bar01.png
+Retro Inventory/Scaled 3x/Health_04_Bar01.png.import
+Retro Inventory/Scaled 3x/Health_04_Bar02.png
+Retro Inventory/Scaled 3x/Health_04_Bar02.png.import
+Retro Inventory/Scaled 3x/Health_04_Bar03.png
+Retro Inventory/Scaled 3x/Health_04_Bar03.png.import
+Retro Inventory/Scaled 3x/Health_04_Bar04.png
+Retro Inventory/Scaled 3x/Health_04_Bar04.png.import
+Retro Inventory/Scaled 3x/Health_04_Bar05.png
+Retro Inventory/Scaled 3x/Health_04_Bar05.png.import
+Retro Inventory/Scaled 3x/Health_04_Bar06.png
+Retro Inventory/Scaled 3x/Health_04_Bar06.png.import
+Retro Inventory/Scaled 3x/Health_04_Heart_Blue_Clear.png
+Retro Inventory/Scaled 3x/Health_04_Heart_Blue_Clear.png.import
+Retro Inventory/Scaled 3x/Health_04_Heart_Blue.png
+Retro Inventory/Scaled 3x/Health_04_Heart_Blue.png.import
+Retro Inventory/Scaled 3x/Health_04_Heart_Red_Clear.png
+Retro Inventory/Scaled 3x/Health_04_Heart_Red_Clear.png.import
+Retro Inventory/Scaled 3x/Health_04_Heart_Red.png
+Retro Inventory/Scaled 3x/Health_04_Heart_Red.png.import
+Retro Inventory/Scaled 3x/Health_04_Heart_Yellow_Clear.png
+Retro Inventory/Scaled 3x/Health_04_Heart_Yellow_Clear.png.import
+Retro Inventory/Scaled 3x/Health_04_Heart_Yellow.png
+Retro Inventory/Scaled 3x/Health_04_Heart_Yellow.png.import
+Retro Inventory/Scaled 3x/Health_04.png
+Retro Inventory/Scaled 3x/Health_04.png.import
+Retro Inventory/Scaled 3x/Health_05_01.png
+Retro Inventory/Scaled 3x/Health_05_01.png.import
+Retro Inventory/Scaled 3x/Health_05_02.png
+Retro Inventory/Scaled 3x/Health_05_02.png.import
+Retro Inventory/Scaled 3x/Health_05_03.png
+Retro Inventory/Scaled 3x/Health_05_03.png.import
+Retro Inventory/Scaled 3x/Heart_Blue_1.png
+Retro Inventory/Scaled 3x/Heart_Blue_1.png.import
+Retro Inventory/Scaled 3x/Heart_Blue_2.png
+Retro Inventory/Scaled 3x/Heart_Blue_2.png.import
+Retro Inventory/Scaled 3x/Heart_Blue_3.png
+Retro Inventory/Scaled 3x/Heart_Blue_3.png.import
+Retro Inventory/Scaled 3x/Heart_Blue_4.png
+Retro Inventory/Scaled 3x/Heart_Blue_4.png.import
+Retro Inventory/Scaled 3x/Heart_Blue.png
+Retro Inventory/Scaled 3x/Heart_Blue.png.import
+Retro Inventory/Scaled 3x/Heart_Orange_1.png
+Retro Inventory/Scaled 3x/Heart_Orange_1.png.import
+Retro Inventory/Scaled 3x/Heart_Orange_2.png
+Retro Inventory/Scaled 3x/Heart_Orange_2.png.import
+Retro Inventory/Scaled 3x/Heart_Orange_3.png
+Retro Inventory/Scaled 3x/Heart_Orange_3.png.import
+Retro Inventory/Scaled 3x/Heart_Orange_4.png
+Retro Inventory/Scaled 3x/Heart_Orange_4.png.import
+Retro Inventory/Scaled 3x/Heart_Orange.png
+Retro Inventory/Scaled 3x/Heart_Orange.png.import
+Retro Inventory/Scaled 3x/Heart_Red_1.png
+Retro Inventory/Scaled 3x/Heart_Red_1.png.import
+Retro Inventory/Scaled 3x/Heart_Red_2.png
+Retro Inventory/Scaled 3x/Heart_Red_2.png.import
+Retro Inventory/Scaled 3x/Heart_Red_3.png
+Retro Inventory/Scaled 3x/Heart_Red_3.png.import
+Retro Inventory/Scaled 3x/Heart_Red_4.png
+Retro Inventory/Scaled 3x/Heart_Red_4.png.import
+Retro Inventory/Scaled 3x/Heart_Red.png
+Retro Inventory/Scaled 3x/Heart_Red.png.import
+Retro Inventory/Scaled 3x/Hearts_Blue_1.png
+Retro Inventory/Scaled 3x/Hearts_Blue_1.png.import
+Retro Inventory/Scaled 3x/Hearts_Blue_2.png
+Retro Inventory/Scaled 3x/Hearts_Blue_2.png.import
+Retro Inventory/Scaled 3x/Hearts_Blue_3.png
+Retro Inventory/Scaled 3x/Hearts_Blue_3.png.import
+Retro Inventory/Scaled 3x/Hearts_Blue_4.png
+Retro Inventory/Scaled 3x/Hearts_Blue_4.png.import
+Retro Inventory/Scaled 3x/Hearts_Blue_5.png
+Retro Inventory/Scaled 3x/Hearts_Blue_5.png.import
+Retro Inventory/Scaled 3x/Hearts_Red_1.png
+Retro Inventory/Scaled 3x/Hearts_Red_1.png.import
+Retro Inventory/Scaled 3x/Hearts_Red_2.png
+Retro Inventory/Scaled 3x/Hearts_Red_2.png.import
+Retro Inventory/Scaled 3x/Hearts_Red_3.png
+Retro Inventory/Scaled 3x/Hearts_Red_3.png.import
+Retro Inventory/Scaled 3x/Hearts_Red_4.png
+Retro Inventory/Scaled 3x/Hearts_Red_4.png.import
+Retro Inventory/Scaled 3x/Hearts_Red_5.png
+Retro Inventory/Scaled 3x/Hearts_Red_5.png.import
+Retro Inventory/Scaled 3x/Hearts_Yellow_1.png
+Retro Inventory/Scaled 3x/Hearts_Yellow_1.png.import
+Retro Inventory/Scaled 3x/Hearts_Yellow_2.png
+Retro Inventory/Scaled 3x/Hearts_Yellow_2.png.import
+Retro Inventory/Scaled 3x/Hearts_Yellow_3.png
+Retro Inventory/Scaled 3x/Hearts_Yellow_3.png.import
+Retro Inventory/Scaled 3x/Hearts_Yellow_4.png
+Retro Inventory/Scaled 3x/Hearts_Yellow_4.png.import
+Retro Inventory/Scaled 3x/Hearts_Yellow_5.png
+Retro Inventory/Scaled 3x/Hearts_Yellow_5.png.import
+Retro Inventory/Scaled 3x/Hearts.png
+Retro Inventory/Scaled 3x/Hearts.png.import
+Retro Inventory/Scaled 3x/Inventory_9Slices.png
+Retro Inventory/Scaled 3x/Inventory_9Slices.png.import
+Retro Inventory/Scaled 3x/Inventory_Example_01.png
+Retro Inventory/Scaled 3x/Inventory_Example_01.png.import
+Retro Inventory/Scaled 3x/Inventory_Example_02.png
+Retro Inventory/Scaled 3x/Inventory_Example_02.png.import
+Retro Inventory/Scaled 3x/Inventory_Example_03.png
+Retro Inventory/Scaled 3x/Inventory_Example_03.png.import
+Retro Inventory/Scaled 3x/Inventory_Example_04.png
+Retro Inventory/Scaled 3x/Inventory_Example_04.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_1.png
+Retro Inventory/Scaled 3x/Inventory_Slot_1.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_2.png
+Retro Inventory/Scaled 3x/Inventory_Slot_2.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_3.png
+Retro Inventory/Scaled 3x/Inventory_Slot_3.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_4.png
+Retro Inventory/Scaled 3x/Inventory_Slot_4.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_5.png
+Retro Inventory/Scaled 3x/Inventory_Slot_5.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_6.png
+Retro Inventory/Scaled 3x/Inventory_Slot_6.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_7.png
+Retro Inventory/Scaled 3x/Inventory_Slot_7.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_8.png
+Retro Inventory/Scaled 3x/Inventory_Slot_8.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_9.png
+Retro Inventory/Scaled 3x/Inventory_Slot_9.png.import
+Retro Inventory/Scaled 3x/Inventory_Slot_10.png
+Retro Inventory/Scaled 3x/Inventory_Slot_10.png.import
+Retro Inventory/Scaled 3x/Inventory.png
+Retro Inventory/Scaled 3x/Inventory.png.import
+Retro Inventory/Scaled 3x/Settings_Bar01.png
+Retro Inventory/Scaled 3x/Settings_Bar01.png.import
+Retro Inventory/Scaled 3x/Settings_Bar02.png
+Retro Inventory/Scaled 3x/Settings_Bar02.png.import
+Retro Inventory/Scaled 3x/Settings_Bar03.png
+Retro Inventory/Scaled 3x/Settings_Bar03.png.import
+Retro Inventory/Scaled 3x/Settings_Cross01.png
+Retro Inventory/Scaled 3x/Settings_Cross01.png.import
+Retro Inventory/Scaled 3x/Settings_Cross02.png
+Retro Inventory/Scaled 3x/Settings_Cross02.png.import
+Retro Inventory/Scaled 3x/Settings_Cross03.png
+Retro Inventory/Scaled 3x/Settings_Cross03.png.import
+Retro Inventory/Scaled 3x/Settings.png
+Retro Inventory/Scaled 3x/Settings.png.import

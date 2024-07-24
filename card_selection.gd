@@ -4,18 +4,26 @@ extends Node2D
 @onready var hand = $CanvasLayer/Hand
 @onready var hand_cards: Array = []
 @onready var selection_phase = SelectionPhase.SETUP
-@onready var display_text = $DisplayText
 @onready var intent_label = $Enemy/IntentLabel
 @onready var turn_queue: Array = [[], []]
 
 @onready var player = $Player
 @onready var enemy = $Enemy
 
+@onready var delaytimer = $delaytimer
+
+@onready var intent = $Player/Intent
+var intent_things: Array = []
+
+@onready var attack_intent = $Player/Intent/AttackIntent
+@onready var defend_intent = $Player/Intent/DefendIntent
+@onready var number_intent = $Player/Intent/NumberIntent
+
 @onready var win_screen = $CanvasLayer/WinScreen
 @onready var lose_screen = $CanvasLayer/LoseScreen
 
-@onready var discard_pile_label = $CanvasLayer/DiscardPile/DiscardPileLabel
-@onready var draw_pile_label = $CanvasLayer/DrawPile/DrawPileLabel
+@onready var discard_pile_label = $CanvasLayer/DiscardPileLabel
+@onready var draw_pile_label = $CanvasLayer/DrawPileLabel
 
 var player_action = null
 var enemy_action = null
@@ -51,6 +59,16 @@ enum Target {
 
 var chosen_action
 
+func delay(seconds: float):
+	delaytimer.wait_time = seconds
+	delaytimer.one_shot = true
+	delaytimer.start()
+
+func hide_intents():
+	intent_things = intent.get_children()
+	for intents in intent_things:
+		intents.hide()
+
 func display_drawn_cards():
 	hand_cards = hand.get_children()
 	for i in hand_cards.size():
@@ -81,20 +99,20 @@ func _process(_delta):
 		end_phase()
 	if selection_phase == SelectionPhase.VICTORY:
 		win_screen.show()
-		if Input.is_action_just_pressed("ui_accept"):
+		if Input.is_action_just_pressed("confirm"):
 			get_tree().reload_current_scene()
 	if selection_phase == SelectionPhase.DEFEAT:
 		lose_screen.show()
-		if Input.is_action_just_pressed("ui_accept"):
+		if Input.is_action_just_pressed("confirm"):
 			get_tree().reload_current_scene()
 		
 func setup_phase():
+	hide_intents()
 	hand_cards = hand.get_children()
 	deck.draw_card(0, 1)
 	deck.draw_card(2, 3)
 	display_drawn_cards()
 	switch_focus(index)
-	display_text.text = ""
 	discard_pile_label.text = str(deck.discard_pile.size())
 	draw_pile_label.text = str(deck.draw_pile.size())
 	selection_phase = SelectionPhase.ENEMY_ACTIONS
@@ -116,23 +134,40 @@ func create_enemy_action():
 	selection_phase = SelectionPhase.SELECTION_ONE
 
 func make_selection():
-	if Input.is_action_just_pressed("ui_left"):
-		if index > 0:
-			index -= 1
+	if Input.is_action_just_pressed("move_left"):
+		index -= 1
+		index = max(0, index)
+		switch_focus(index)
+	if Input.is_action_just_pressed("move_right"):
+		index += 1
+		index = min(index, 3)
+		switch_focus(index)
+	if Input.is_action_just_pressed("move_up"):
+		if index == 0:
+			index = 2
 			switch_focus(index)
-	if Input.is_action_just_pressed("ui_right"):
-		if index < hand.get_child_count() - 1:
-			index += 1
+		elif index == 1:
+			index = 3
 			switch_focus(index)
-	if Input.is_action_just_pressed("ui_accept") and selection_phase == SelectionPhase.SELECTION_ONE:
+		else:
+			index -= 2
+			switch_focus(index)
+	if Input.is_action_just_pressed("move_down"):
+		index += 2
+		if index > 3:
+			index = index % 2
+		switch_focus(index)
+	if Input.is_action_just_pressed("confirm") and selection_phase == SelectionPhase.SELECTION_ONE:
 		sel_one = deck.hand_pile[index]
 		index_one = index
 		hand_cards[index].disabled = true
+		show_first_intent(sel_one[0])
 		selection_phase = SelectionPhase.SELECTION_TWO
-	if Input.is_action_just_pressed("ui_accept") and selection_phase == SelectionPhase.SELECTION_TWO and hand_cards[index].disabled == false:
+	if Input.is_action_just_pressed("confirm") and selection_phase == SelectionPhase.SELECTION_TWO and hand_cards[index].disabled == false:
 		sel_two = deck.hand_pile[index]
 		index_two = index
 		hand_cards[index].disabled = true
+		show_second_intent(sel_two)
 		selection_phase = SelectionPhase.PREPARE_PLAYER
 
 func switch_focus(new_index):
@@ -151,9 +186,9 @@ func execute_actions():
 		turn_queue[1].push_front(enemy_action)
 	if player_action["ActionType"] == "Attack":
 		turn_queue[1].push_front(player_action)
+	print(turn_queue)
 	for action_type in turn_queue:
 		for action in action_type:
-			display_text.text = action["ActionType"] + " for " + str(action["Number"])
 			if action["ActionType"] == "Attack":
 				if action["TargetIndex"] == Target.ENEMY:
 					enemy.take_damage(action["Number"])
@@ -172,7 +207,18 @@ func execute_actions():
 	if selection_phase != SelectionPhase.VICTORY and selection_phase != SelectionPhase.DEFEAT: 
 		selection_phase = SelectionPhase.END_PHASE
 
+func show_first_intent(suit):
+	if suit == "Attack":
+		attack_intent.show()
+	if suit == "Defend":
+		defend_intent.show()
+
+func show_second_intent(num):
+	intent_label.show()
+	intent_label.text = str(num[1])
+
 func end_phase():
+	hide_intents()
 	turn_queue = [[], []]
 	player.reset_block()
 	enemy.reset_block()

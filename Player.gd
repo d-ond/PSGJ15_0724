@@ -33,6 +33,7 @@ func take_damage(value):
 func receive_block(value):
 	block = value
 	set_block_bar()
+	return
 
 func update_health_bar():
 	health_bar.value = (curr_hp / max_hp) * 100
